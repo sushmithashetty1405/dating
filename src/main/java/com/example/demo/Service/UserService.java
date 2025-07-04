@@ -121,6 +121,8 @@ public class UserService {
         return ResponseEntity.status(HttpStatus.OK).body(result);
     }
 
+    
+    //by name
 	public ResponseEntity<?> searchbyname(String letters) {
 		
 		List <User> users=userdao.searchbyname("%"+letters+"%");
@@ -133,6 +135,7 @@ public class UserService {
 		}
 	}
 	//by email
+	
 
 	public ResponseEntity<?> searchbyemail(String letters) {
 	List<User> users=userdao.searchbyemail("%"+letters+"%");

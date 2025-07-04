@@ -64,10 +64,11 @@ public class UserController {
 	public ResponseEntity<?> searchbyname(@PathVariable String letters){
 		return userservice.searchbyname(letters);
 	}
-	
 	@GetMapping("user/search/email/{letters}")
 	public ResponseEntity<?> searchbyemail(@PathVariable String letters){
 		return userservice.searchbyemail(letters);
 	}
+	
+	
 	
 }
