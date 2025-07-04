@@ -46,6 +46,17 @@ UserRepository userrepo;
 		return userrepo.findByGender(UserGender.FEMALE);
 	}
 
+	public List<User> searchbyname(String letters) {
+		return userrepo.searchByName(letters);
+		
+		
+
+	}
+
+	public List<User> searchbyemail(String letters) {
+		return userrepo.searchByEmail(letters);
+	}
+
 
 
 
